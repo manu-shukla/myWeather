@@ -103,7 +103,7 @@ function chnageback(v, weather) {
 
 function getLocation() {
   if (navigator.geolocation) {
-    navigator.geolocation.watchPosition(showPosition);
+    navigator.geolocation.getCurrentPosition(showPosition);
   } else {
     alert("Sorry, could not find your location.");
   }
