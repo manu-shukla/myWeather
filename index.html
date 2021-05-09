@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>myWeather</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1050px)"
+      href="style_mobile.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Farro:wght@500&display=swap"
@@ -18,7 +23,13 @@
   </head>
   <body>
     <div class="container">
-      <video autoplay loop id="back" src="clear.mp4" type="video/mp4"></video>
+      <video
+        autoplay
+        loop
+        id="back"
+        src="backgrounds/clear.webm"
+        type="video/webm"
+      ></video>
       <header>
         <div class="heading">
           <h1>myWeather</h1>
@@ -34,13 +45,13 @@
         <div id="rcity"></div>
       </div>
       <div class="spanel">
-        <i class="fas fa-search-location fa-3x" onclick="foc()"> </i
+        <i class="fas fa-search-location fa-2x" onclick="foc()"> </i
         ><input
           id="ip"
           class="search"
           type="text"
           placeholder="Enter the City"
-        /><i class="fas fa-map-marker-alt fa-3x" onclick="getLocation()"></i>
+        /><i class="fas fa-map-marker-alt fa-2x" onclick="getLocation()"></i>
       </div>
       <div class="main">
         <div class="city">New Delhi, IN</div>

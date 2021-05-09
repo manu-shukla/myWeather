@@ -2,10 +2,11 @@ const api = {
   key: "24bdd74c0b39632f07674f51aae1688a",
   base: "https://api.openweathermap.org/data/2.5/",
 };
+localStorage.setItem("city", []);
+var rcity = localStorage.getItem("city", []);
 const searchbox = document.querySelector(".search");
 searchbox.addEventListener("keypress", setQuery);
-localStorage.setItem("city", "");
-var rcity = localStorage.getItem("city");
+
 function setQuery(evt) {
   if (evt.keyCode == 13) {
     getResults(searchbox.value);
@@ -92,11 +93,11 @@ function datebuild(d) {
 
 function chnageback(v, weather) {
   if (weather.weather[0].main == "Rain") {
-    return `rain.mp4`;
+    return `backgrounds/rain.webm`;
   } else if (weather.weather[0].main == "Clouds") {
-    return `cloud.mp4`;
+    return `backgrounds/cloud.webm`;
   } else {
-    return `clear.mp4`;
+    return `backgrounds/clear.webm`;
   }
 }
 
@@ -147,10 +148,8 @@ function clearArray(array) {
   }
 }
 setInterval(time, 1000);
-function time()
-{
-  let clock  = new Date();
+function time() {
+  let clock = new Date();
   let clk = document.getElementById("clock");
-  clk.innerHTML= `${clock.getHours()}:${clock.getMinutes()}:${clock.getSeconds()}`;
-
+  clk.innerHTML = `${clock.getHours()}:${clock.getMinutes()}:${clock.getSeconds()}`;
 }
