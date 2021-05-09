@@ -124,11 +124,11 @@ i.fas {
 .recent {
   position: absolute;
   left: 3%;
-  top: 30%;
+  top: 18vw;
   background-color: white;
-  height: 40vh;
+  height: 25vw;
   opacity: 0.7;
-  width: 35vh;
+  width: 20vw;
 
   text-align: center;
 }
@@ -154,10 +154,10 @@ i.fa-trash-alt {
   font-size: 45px;
   color: whitesmoke;
   position: absolute;
-  right: 5%;
+  right: 3%;
   /* background-color: black; */
   border: 5px solid white;
-  padding: 12px 26px;
+  padding: 12px 20px;
 
   transition: 0.25s ease-in;
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 12px 12px,
