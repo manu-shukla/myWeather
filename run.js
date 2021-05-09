@@ -52,7 +52,7 @@ function displayResults(weather) {
     weat.innerText = `${weather.weather[0].main}`;
     let icon = document.getElementById("ico");
     console.log(icon);
-    let video = document.getElementById("back");
+    let video = document.querySelector("#back");
     video.src = chnageback(video, weather);
     icon.src = `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
     searchbox.value = "";
