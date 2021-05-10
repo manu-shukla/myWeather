@@ -176,6 +176,8 @@ i.fa-trash-alt {
 
 .foot {
   display: flex;
+  position: absolute;
+  bottom: 3px;
   flex-direction: column;
   justify-content: space-between;
   color: white;
