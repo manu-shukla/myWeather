@@ -57,6 +57,7 @@ function displayResults(weather) {
     icon.src = `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
     searchbox.value = "";
     searchbox.blur();
+    window.navigator.vibrate(500);
   }
 }
 
